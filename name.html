@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人檔案</title>
+    <style>
+      /** {
+        border: 1px solid black;
+      }*/
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .white {
+        background-color: #fff;
+      }
+      .dao {
+        padding: 20px 20px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+        font-size: 20px;
+        color: #a5a3a3;
+      }
+      .demo {
+        background-color: #ccc;
+        margin-top: 8px;
+        transition: 0.5s;
+      }
+
+      .demo:hover {
+        transform: scale(1.2);
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .ying {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--側邊欄-->
+    <div class="flex column white" style="width: 200px; z-index: 2">
+      <!--頭像欄-->
+      <div
+        class="flex"
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+      >
+        <img src="image/steam.png" width="40px" height="40px" />
+        <div style="margin-left: 10px">steam</div>
+      </div>
+      <div class="flex column">
+        <!--功能列表-->
+        <div class="flex1">
+          <div class="dao demo">
+            <a href="money.html">&nbsp&nbsp儲值中心&nbsp&nbsp</a>
+          </div>
+          <div class="dao demo">
+            <a href="shop.html">&nbsp&nbsp商店&nbsp&nbsp</a>
+          </div>
+          <div class="dao demo">
+            <a href="box.html">&nbsp&nbsp收藏庫&nbsp&nbsp</a>
+          </div>
+          <div class="dao demo">
+            <a href="name.html">&nbsp&nbsp個人檔案&nbsp&nbsp</a>
+          </div>
+          <div class="dao demo">
+            <a href="about.html">&nbsp&nbsp關於我們&nbsp&nbsp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--主區域-->
+    <div class="flex flex1 column">
+      <div class="white" style="height: 60px; z-index: 1"></div>
+      <div class="flex flex1" style="overflow: auto">
+        <!--左區-->
+        <div style="flex: 3" class="flex column">
+          <div style="height: 200px" class="mgt8 white mg8 mgr8 ying">
+            <p>設定</p>
+          </div>
+          <div style="height: 160px" class="mgt8 white mg8 mgr8 ying">
+            <p>常用信箱--</p>
+          </div>
+          <div style="height: 160px" class="mgt8 white mg8 mgr8 ying">
+            <p>設定暱稱--</p>
+          </div>
+          <div style="height: 160px" class="mgt8 white mg8 mgr8 ying">
+            <p>更改密碼--</p>
+          </div>
+        </div>
+        <!--右區-->
+        <div style="flex: 1" class="flex column">
+          <div class="flex column">
+            <!--提示區-->
+            <div style="height: 150px" class="white mgt8 ying">提示</div>
+            <!--消息區-->
+            <div style="height: 300px" class="white mgt8 ying">
+              如何更改暱稱?
+            </div>
+            <div style="height: 300px" class="white mgt8 ying">
+              如何更改信箱?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

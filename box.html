@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>收藏庫</title>
+    <style>
+      body {
+        margin: 0px;
+        background-color: #eee;
+        height: 100vh;
+      }
+      /* * {
+        border: 1px solid black;
+      }*/
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .white {
+        background-color: #ffffff;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .dao {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+        font-size: 16px;
+        color: #666;
+      }
+      .daoo {
+        margin-top: 10px;
+        background-color: #d2cfcf;
+      }
+      /*按鈕的css*/
+      /* === removing default button style ===*/
+      .button {
+        margin: 0;
+        height: auto;
+        background: transparent;
+        padding: 0;
+        border: none;
+      }
+
+      /* button styling */
+      .button {
+        --border-right: 6px;
+        --text-stroke-color: rgba(82, 77, 77, 0.6);
+        --animation-color: #340c9b;
+        --fs-size: 2em;
+        letter-spacing: 2px;
+        text-decoration: none;
+        font-size: var(--fs-size);
+        font-family: "Arial";
+        position: relative;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px var(--text-stroke-color);
+      }
+      /* this is the text, when you hover on button */
+      .hover-text {
+        position: absolute;
+        box-sizing: border-box;
+        content: attr(data-text);
+        color: var(--animation-color);
+        width: 0%;
+        inset: 0;
+        border-right: var(--border-right) solid var(--animation-color);
+        overflow: hidden;
+        transition: 0.5s;
+        -webkit-text-stroke: 1px var(--animation-color);
+      }
+      /* hover */
+      .button:hover .hover-text {
+        width: 100%;
+        filter: drop-shadow(0 0 23px var(--animation-color));
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--側邊攔-->
+    <div class="flex column white" style="width: 300px">
+      <!--圖標-->
+      <div
+        class="flex"
+        style="
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          border-bottom: 1px solid #878686;
+        "
+      >
+        <img src="image/steam.png" width="40px" height="40px " />
+        <div style="margin-left: 10px">steam</div>
+      </div>
+      <!--遊戲列表-->
+      <div class="flex1">
+        <div class="dao daoo">貪吃蛇</div>
+        <div class="dao daoo">2</div>
+        <div class="dao daoo">3</div>
+      </div>
+    </div>
+    <!--內容區-->
+    <div class="flex flex1 column">
+      <!--最頂部-->
+      <div class="white" style="height: 60px; z-index: 1">
+        <button
+          data-text="Awesome"
+          class="button"
+          onclick="location.href='money.html'"
+        >
+          <span class="actual-text">&nbsp 儲值中心 &nbsp </span>
+          <span class="hover-text" aria-hidden="true"
+            >&nbsp 儲值中心 &nbsp</span
+          >
+        </button>
+
+        <button
+          data-text="Awesome"
+          class="button"
+          onclick="location.href='shop.html'"
+        >
+          <span class="actual-text">&nbsp 商店 &nbsp</span>
+          <span class="hover-text" aria-hidden="true">&nbsp 商店 &nbsp</span>
+        </button>
+
+        <button
+          data-text="Awesome"
+          class="button"
+          onclick="location.href='box.html'"
+        >
+          <span class="actual-text">&nbsp 收藏庫 &nbsp</span>
+          <span class="hover-text" aria-hidden="true">&nbsp 收藏庫 &nbsp</span>
+        </button>
+
+        <button
+          data-text="Awesome"
+          class="button"
+          onclick="location.href='name.html'"
+        >
+          <span class="actual-text">&nbsp 個人檔案 &nbsp</span>
+          <span class="hover-text" aria-hidden="true"
+            >&nbsp 個人檔案 &nbsp</span
+          >
+        </button>
+
+        <button
+          data-text="Awesome"
+          class="button"
+          onclick="location.href='about.html'"
+        >
+          <span class="actual-text">&nbsp 關於我們 &nbsp</span>
+          <span class="hover-text" aria-hidden="true"
+            >&nbsp 關於我們 &nbsp</span
+          >
+        </button>
+      </div>
+      <!--遊戲內容-->
+      <div class="flex column">遊戲內容</div>
+    </div>
+  </body>
+</html>

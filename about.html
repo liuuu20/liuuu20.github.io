@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>關於我們</title>
+</head>
+<style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #4bc0c8, #c779d0, #feac5e);
+      }
+      .box {
+        height: 80vh;
+        width: 70%;
+        max-width: 600px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 4px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+        text-align: justify;
+        color: #333;
+        font-size: 17px;
+        line-height: 1.7;
+        letter-spacing: 0.034em;
+        font-family: "思源黑体";
+        overflow-y: scroll;
+      }
+      .box::-webkit-scrollbar {
+        display: none; /* Chrome Safari */
+      }
+      button {
+        outline: 0;
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 140px;
+        height: 50px;
+        border-radius: 0.5em;
+        box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
+        overflow: hidden;
+      }
+
+      button div {
+        transform: translateY(0px);
+        width: 100%;
+      }
+
+      button,button div {
+         transition: 0.6s cubic-bezier(.16,1,.3,1);
+      }
+
+      button div span {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         height: 29px;
+         padding: 0.75em 1.125em;
+      }
+
+      button div:nth-child(1) {
+         background-color: #1e90ff;
+      }
+
+      button div:nth-child(2) {
+        background-color: #21dc62;
+      }
+
+      button:hover {
+         box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
+      }
+
+      button:hover div {
+         transform: translateY(-50px);
+      }
+
+      button p {
+        font-size: 17px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+
+       button:active {
+        transform: scale(0.95);
+      }
+    </style>
+<body>
+ <div class="box">
+      <P>歡迎點擊進來，這裡會特別介紹我們選擇的主題及成員</P>
+      <P>以下是我們的組員介紹:</P>
+      <P>410000433 吳秉勳</P>
+      <P>410000854 藍聖欽</P>
+      <P>410001118 陳冠亦</P>
+      <P>410001092 劉祐誠</P>
+      </br>
+     
+      <img src="image/4.jpg" width="600px" height="400px">
+      
+      <p>這次的報告我們選擇以一種類似遊戲網站的方式來完成，我們選擇了steam來做為主要參考對象，由於實力的不足，如何簡化網站並設計出屬於我們風格的作品讓我們思考許久，最終我們以最常用的幾個功能作為選擇。</p>
+      <p>在最左邊我們選出儲值中心、商店、收藏庫以及個人檔案，而在上方則選擇了一些我們認為比較常點擊的功能，希望能大致實現相關的功能。</p>
+      <p>設計方面，在首頁方面運用css的技巧來進行排版，這使我們成功的在畫面中切出很多區域來更方便的進行作業，而在內文也留出足夠多的空間來因應日後的需求，而在登入介面則是運用了各種技巧，成功地展現了能夠左右滑動的登入介面。</p>
+      <p>在這份報告上我們用上了許多上課學習到的技巧，來進行網頁的設計，也與網路上的各種教學相互融合，我們相信能設計出屬於我們獨特的風格。</p>
+      <P>我們的最終目的是像steam一樣，建立起一個屬於我們自己的遊戲選購網站，清楚明瞭的介面，直觀方便的系統是我們所追求的目標。</P>
+      <p>因為這次的報告，讓我們能夠檢視自己一年來的成果，我們會把握這次機會把所學都展現出來。</p>
+      <P>透過這次機會，不僅知道了程式設計還有許多等著我們去發掘的，也藉由這個機會能夠更深入的了解了這堂課。</P>
+      
+      <img src="image/car.png" 
+         width="150px"
+         height="150px" 
+      >
+
+      <p style="text-align: right">第13組 </p>
+      
+
+
+     <div style="
+     display: flex;
+     justify-content: end;
+     ">
+      <button  onclick="location.href='shop.html'">
+        <div>
+          <span><p>點擊返回</p></span>
+        </div>
+        <div>
+          <span><p>Thanks</p></span>
+       </div>
+       </button>
+    </div>
+ 
+  </div>
+<script></script>
+</body>
+</html>
